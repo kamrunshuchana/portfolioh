@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuchana's Portfolio</title>
+    <link rel="stylesheet" href="cssfile.css">
+    <script src="https://kit.fontawesome.com/c0357859a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+             <img src="logo.png" class="logo">
+             <ul id="sidemenu" >
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+             </ul>
+             <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I'm <span>Shuchana</span> <br>from Dhaka</h1>
+        </div>
+    </div>
+</div>
+<!----------about-------->
+<div id="about">
+    <div class="container">
+        <div class="raw">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me </h1>
+                <p>Hi, I am Shuchana.I am studying CSE at Daffodil Internationat University. 
+                   I want to be a researcher. Already I have started working on research paper 
+                   and my topic is Skin disease detection using Image processing, another one
+                    is Acne detection using Neural Networks</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Research</span><br>For higher education i'm doing research paper</li>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces.</li>
+                        <li><span>Neural Network</span><br>Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Machine Learning</span><br>Still Learning</li>
+                        <li><span>Deep Learning</span><br>Still Learning</li>
+                        <li><span>Neural Network</span><br>Still Learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>Complete my S.S.C from Tongi Pilot School& Girls Collage</li>
+                        <li><span>2019</span><br>Complete my H.S.C from Uttara Model Collage</li>
+                        <li><span>2020-current</span> <br>B.Sc in CSE</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <h2>Research</h2>
+                <p>I am offer you the best services for preparing research articles,
+                   editing them, re-writing them and submitting them to reputed journals. 
+                   My team of qualified writers ensures that your review paper is written accurately, 
+                   succinctly, coherently, and based on the latest research.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>UI/UX Design</h2>
+                <p>Want to build your product with a team that establishes a clear design process, 
+                    meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft's
+                    UI and UX services. Our design team is a small design studio within a large 
+                    software company that will help you build an engaging product easily and quickly.</p>
+                   <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!------------------portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg"> 
+                <div class="layer">
+                    <h3>UX/UI design</h3>
+                    <p>I haved design a sequence diagram for University Transportation 
+                       System and Student portal DIU</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpg"> 
+                <div class="layer">
+                    <h3>Research work</h3>
+                    <p>I am working on two topics one is Skin Disease Detection using Image
+                       Processing and another is Acne Detection using Neural Network</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!--------------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="raw">
+            <div class="contact-left"> 
+                <h1 class="sub-title" >Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="MY CV.pdf" download class="btn btn2">Downlod CV</a>
+            </div>
+            <div class="contact-right"> 
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shuchana. Made with <i class="fa-solid fa-heart"></i> by me.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontens = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontens){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
